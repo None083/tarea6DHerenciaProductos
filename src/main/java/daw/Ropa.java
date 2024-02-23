@@ -31,9 +31,9 @@ public abstract class Ropa extends Producto implements SeEnvia {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
+        sb.append(super.toString());
         sb.append("Ropa{");
-        sb.append("marca=").append(marca);
-        sb.append('}');
+        sb.append("marca=").append(marca + " ");
         return sb.toString();
     }
     

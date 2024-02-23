@@ -33,7 +33,8 @@ public abstract class Libro extends Producto implements Comparable<Libro> {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("isbn=").append(isbn);
+        sb.append(super.toString());
+        sb.append("isbn=").append(isbn + " ");
         return sb.toString();
     }
     
@@ -63,5 +64,7 @@ public abstract class Libro extends Producto implements Comparable<Libro> {
         final Libro other = (Libro) obj;
         return Objects.equals(this.isbn, other.isbn);
     }
+    
+    public abstract void leer();
 
 }

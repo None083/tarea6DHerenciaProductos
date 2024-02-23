@@ -31,16 +31,21 @@ public final class LibroPapel extends Libro implements SeEnvia {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
+        sb.append(super.toString());
         sb.append("LibroPapel{");
         sb.append("numPaginas=").append(numPaginas);
-        sb.append('}');
         return sb.toString();
     }
 
     @Override
     public void enviar(String direccion) {
-        System.out.println("El producto de Libro tipo LibroPapel con número de páginas "
-                + this.numPaginas + " está listo para enviar a " + direccion);
+        System.out.println("El producto de Libro tipo LibroPapel "
+                + this.getDescripcion() + " está listo para enviar a " + direccion);
+    }
+    
+    @Override
+    public void leer() {
+        System.out.println("Abres el libro de papel para comenzar a leer");
     }
 
 }

@@ -65,7 +65,7 @@ public abstract class Producto {
         sb.append("codigo=").append(codigo);
         sb.append(", precio=").append(precio);
         sb.append(", iva=").append(iva);
-        sb.append(", descripcion=").append(descripcion);
+        sb.append(", descripcion=").append(descripcion + " ");
         return sb.toString();
     }
 

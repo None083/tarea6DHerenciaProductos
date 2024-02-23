@@ -31,9 +31,9 @@ public final class Musica extends Producto {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
+        sb.append(super.toString());
         sb.append("Musica{");
         sb.append("grupo=").append(grupo);
-        sb.append('}');
         return sb.toString();
     }
     

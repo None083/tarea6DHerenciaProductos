@@ -31,9 +31,9 @@ public final class Pantalon extends Ropa {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
+        sb.append(super.toString());
         sb.append("Pantalon{");
         sb.append("talla=").append(talla);
-        sb.append('}');
         return sb.toString();
     }
 
