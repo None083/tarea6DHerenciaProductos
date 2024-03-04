@@ -125,7 +125,7 @@ public class MiTienda {
             }
         }
         
-        //Imprimer método interfaz SeEnvia
+        //Imprimir método interfaz SeEnvia
         for (SeEnvia s : listaSeEnvia) {
             s.enviar("Calle Manzanares, 3");
         }

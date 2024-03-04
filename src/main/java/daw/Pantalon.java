@@ -36,11 +36,4 @@ public final class Pantalon extends Ropa {
         sb.append("talla=").append(talla);
         return sb.toString();
     }
-
-    @Override
-    public void enviar(String direccion) {
-        System.out.println("El producto de Ropa tipo pantalón de talla " 
-                + this.talla + " está listo para enviar a " + direccion);
-    }
-
 }
